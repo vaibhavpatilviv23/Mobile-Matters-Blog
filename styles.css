@@ -1,0 +1,6 @@
+/* added Google Font for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+nav {
+    font-family: 'Alfa Slab One', serif;
+}
