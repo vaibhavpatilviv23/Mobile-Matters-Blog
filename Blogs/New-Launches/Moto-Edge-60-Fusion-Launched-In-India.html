@@ -25,6 +25,22 @@
                 <a href="/index.html" class="text-white hover:text-blue-400">Home</a>
                 <a href="/aboutus.html" class="text-white hover:text-blue-400">About Us</a>
             </div>
+
+            <!--Hamburger icon-->
+            <button id="menu-btn" class="block md:hidden hamburger focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+         <!--Mobile menu-->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-slate-700 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
+                <a href="/index.html" class="text-white hover:text-blue-400 active:text-blue-400">Home</a>
+                <a href="/aboutus.html" class="text-white hover:text-blue-400 active:text-blue-400">About Us</a>
+            </div>
         </div>
     </nav>
 
@@ -45,8 +61,7 @@
 
         <section id="primaryimage">
             <figure class="space-y-3">
-                <img src="/Assets/Blogs Data - Images/BLOG2_1.webp"
-                    alt="Moto Edge 60 Fusion in Pink Color"
+                <img src="/Assets/Blogs Data - Images/BLOG2_1.webp" alt="Moto Edge 60 Fusion in Pink Color"
                     class="max-w-60 sm:max-w-80 mx-auto rounded-lg border-3" loading="eager">
                 <figcaption class="text-center">Moto Edge 60 Fusion in Pink Color</figcaption>
             </figure>
@@ -190,6 +205,9 @@
             </ul>
         </section>
     </article>
+
+    <!--Script for custom JS-->
+    <script src="/script.js"></script>
 </body>
 
 </html>
