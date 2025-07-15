@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile Matters Blog | News - Latest Mobile Trends, Launches & Updates</title>
+    <meta name="description"
+        content="Stay updated with the latest mobile tech headlines, launches, and innovations. Mobile Matters delivers bite-sized, impactful news for smartphone enthusiasts and industry followers.">
+    <link rel="shortcut icon" href="Assets/Core/Images/Mobile Matters Blog - logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!--Tailwind CSS CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta property="og:title" content="Mobile Matters Blog | Latest Mobile Trends, Launches & Updates" />
+    <meta property="og:description"
+        content="Stay updated with the latest mobile tech headlines, launches, and innovations. Mobile Matters delivers bite-sized, impactful news for smartphone enthusiasts and industry followers." />
+    <meta property="og:image"
+        content="https://mobilemattersblog.netlify.app/Assets/Core/Images/Mobile%20Matters%20Blog%20-%20logo.jpg" />
+    <meta property="og:url" content="https://mobilemattersblog.netlify.app/" />
+    <meta property="og:type" content="website" />
 </head>
+
 <body>
-    
+    <!--Navbar-->
+    <nav class="navbar p-3 bg-slate-800 font-bold sm:text-xl">
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <a href="index.html" class="text-white hover:text-blue-400">Mobile Matters Blog</a>
+            <!--Other Menu-->
+            <div class="hidden space-x-5 md:flex">
+                <a href="index.html" class="text-white hover:text-blue-400">Home</a>
+                <a href="aboutus.html" class="text-white hover:text-blue-400">About Us</a>
+            </div>
+
+            <!--Hamburger icon-->
+            <button id="menu-btn" class="block md:hidden hamburger focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!--Mobile menu-->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-slate-700 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
+                <a href="index.html" class="text-white hover:text-blue-400 active:text-blue-400">Home</a>
+                <a href="aboutus.html" class="text-white hover:text-blue-400 active:text-blue-400">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Script for custom JS-->
+    <script src="script.js"></script>
 </body>
+
 </html>
