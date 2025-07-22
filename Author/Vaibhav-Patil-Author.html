@@ -27,6 +27,23 @@
                 <a href="#" class="text-white hover:text-blue-400">News</a>
                 <a href="#" class="text-white hover:text-blue-400"></a>
             </div>
+
+            <!--Hamburger icon-->
+            <button id="menu-btn" class="block md:hidden hamburger focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!--Mobile menu-->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-slate-700 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
+                <a href="/index.html" class="text-white hover:text-blue-400 active:text-blue-400">Home</a>
+                <a href="/aboutus.html" class="text-white hover:text-blue-400 active:text-blue-400">About Us</a>
+                <a href="/news.html" class="text-white hover:text-blue-400 active:text-blue-400">News</a>
+            </div>
         </div>
     </nav>
 
@@ -62,11 +79,11 @@
                 </section>
 
             </div>
-
-
-
         </article>
     </section>
+
+    <!--Script for Mobile navbar-->
+    <script src="/script.js"></script>
 </body>
 
 </html>
