@@ -7,29 +7,40 @@
     <title>Mobile Matters Blog – Explore Smartphones, Gadgets & Reviews | Home </title>
     <meta name="description"
         content="Mobile Matters offers deep dives into the latest smartphones, trends, and accessories—perfect for tech enthusiasts and savvy buyers alike.">
-    <link rel="shortcut icon" href="Assets/Core/Images/Mobile Matters Blog - logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Images/Logo/Images/Mobile Matters Blog - favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <!--Google Fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
     <!--Tailwind CSS CDN link-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta property="og:description"
         content="Stay updated with the latest mobile tech headlines, launches, and innovations. Mobile Matters delivers bite-sized, impactful news for smartphone enthusiasts and industry followers." />
     <meta property="og:image"
-        content="https://mobilemattersblog.netlify.app/Assets/Core/Images/Mobile%20Matters%20Blog%20-%20logo.jpg" />
+        content="https://mobilemattersblog.netlify.app/Assets/Logo/Images/Mobile&Matters&Blog&-&logo.webp" />
     <meta property="og:url" content="https://mobilemattersblog.netlify.app/" />
     <meta property="og:type" content="website" />
 </head>
 
 <body class="bg-gray-100 dark:bg-black dark:text-white">
     <!--Navbar-->
-    <nav class="navbar p-3 bg-blue-700 font-semibold sm:text-xl">
+    <nav class="navbar p-3 bg-linear-65 from-slate-300 to-blue-800 font-semibold sm:text-xl">
         <div class="flex items-center justify-between">
             <!--Logo-->
-            <a href="index.html" class="text-white hover:text-blue-400">Mobile Matters Blog</a>
+            <a href="index.html" class="text-white hover:text-blue-400 custom-font"><img
+                    src="Assets/Images/Logo/Images/Mobile Matters Blog - favicon.webp"
+                    alt="Mobile Matters Blog logo with clickable link" class="border-none h-10 w-30"></a>
             <!--Other Menu-->
             <div class="hidden space-x-5 md:flex">
-                <a href="index.html" class="text-white hover:text-blue-400">Home</a>
-                <a href="aboutus.html" class="text-white hover:text-blue-400">About Us</a>
-                <a href="news.html" class="text-white hover:text-blue-400">News</a>
+                <a href="index.html" class="text-white hover:text-blue-400 custom-font">Home</a>
+                <a href="Smartphones/index.html" class="text-white hover:text-blue-400 custom-font">Smartphones</a>
+                <!--
+                <a href="#l" class="text-white hover:text-blue-400 custom-font">Accessories</a>
+                <a href="#" class="text-white hover:text-blue-400 custom-font">Laptops</a>
+                -->
+                <a href="News/Index.html" class="text-white hover:text-blue-400 custom-font">News</a>
+                <a href="aboutus.html" class="text-white hover:text-blue-400 custom-font">About</a>
             </div>
 
             <!--Hamburger icon-->
@@ -43,53 +54,321 @@
         <!--Mobile menu-->
         <div class="md:hidden">
             <div id="menu"
-                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-slate-700 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
-                <a href="index.html" class="text-white hover:text-blue-400 active:text-blue-400">Home</a>
-                <a href="aboutus.html" class="text-white hover:text-blue-400 active:text-blue-400">About Us</a>
-                <a href="news.html" class="text-white hover:text-blue-400 active:text-blue-400">News</a>
+                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-gradient-to-br from-slate-300 via-blue-500 to-blue-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
+                <ul class="divide-y divide-white/10">
+                    <li>
+                        <a href="index.html" class="block px-6 py-5 text-white font-semibold">Home</a>
+                    </li>
+                    <li>
+                        <a href="Smartphones/index.html" class="block px-6 py-5 text-white font-semibold">Smartphones</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="aboutus.html" class="block px-6 py-5 text-white font-semibold">Accessories</a>
+                    </li>
+                    
+                    <li>
+                        <a href="aboutus.html" class="block px-6 py-5 text-white font-semibold">Laptops</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="News/Index.html" class="block px-6 py-5 text-white font-semibold">News</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html" class="block px-6 py-5 text-white font-semibold">About</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!--Recent news-->
-    <section class="px-5 py-3 mx-5 lg:mx-10">
-        <h2 class="font-bold">Latest News</h2>
-        <!--Article list below which includes images related to article, heading some short para with 3 dots for full news page-->
-        <!--Column design for reponsive design-->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mx-auto">
-            <div>
-                <a href="Blogs/New-Launches/Moto-Edge-60-Fusion-Launched-In-India.html">
-                    <article id="news" class="mt-4">
-                        <!--News Thumbnail-->
-                        <img src="Assets/Blogs Data - Images/BLOG2_1.webp" alt="Moto Edge 60 Fusion launched in India"
-                            class="thumbnail border-3 rounded-lg" loading="eager">
-                        <!--News titile-->
-                        <h3 class="font-bold hover:text-blue-400 text-xl">Moto Edge 60 Fusion launched in India</h3>
-                        <!--News summary-->
-                        <p>Motorola has launched Moto Edge 60 Fusion successor to the Moto Edge 50 fusion. Moto Edge 60
-                            Fusion comes
-                            with Mediatek Dimensity 7400 processor compared to last year Snapdragon 7s Gen 2 Processor.
-                        </p>
-                    </article>
-                </a>
+    <!--Hero Section-->
+    <section class="bg-slate-100 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-15">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-blue-500 font-semibold uppercase tracking-widest text-sm">
+                    Smartphones • Gadgets • Tech News
+                </p>
+                <h1 class="mt-5 text-4xl md:text-6xl font-bold leading-tight text-slate-800">Stay Ahead in the <br>
+                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">World of
+                        Technology</span>
+                </h1>
+                <p class="mt-6 text-slate-600 text-lg leading-relaxed">Discover smartphone launches, gadget reviews,
+                    buying guides, accessories and technology updates
+                    in one place.</p>
+
+                <!--CTA Buttons-->
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#categories"
+                        class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold px-6 py-3 rounded-lg hover:shadow-md transition duration-300">
+                        Categories
+                    </a>
+                    <a href="#news"
+                        class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold px-6 py-3 rounded-lg hover:shadow-md transition duration-300">
+                        News
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="Blogs/News/Iqoo-Neo-10-Launching-Soon-In-India.html">
-                    <article id="news" class="mt-4">
-                        <!--News Thumbnail-->
-                        <img src="Assets/Blogs Data - Images/BLOG1_1.webp" alt="IQOO NEO 10 poster in Orange color"
-                            class="thumbnail border-3 rounded-lg" loading="eager">
-                        <h3 class="font-bold hover:text-blue-400 text-xl">iQOO is launching its IQOO Neo 10 in India on
-                            26th May</h3>
-                        <p>iQOO is launching its IQOO Neo 10 a new gaming centric smartphone in India on 26th May2025.
-                            It
-                            comes with
-                            Snapdragon 8s Gen 4 along with a custom chip for gaming.</p>
-                    </article>
-            </div></a>
+        </div>
+    </section>
+
+    <!--Ad Placement-->
+    <!--
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="ad-slot bg-white rounded-xl shadow-sm h-[90px] flex items-center justify-center">
+                <p class="text-slate-400 uppercase tracking-wider text-cxs">
+                    Google Ad (728 X 90)
+                </p>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--Featured Articles section-->
+    <!--
+    <section class="bg-slate-100 md:py-16 py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-blue-700 font-semibold uppercase tracking-widest">Featured Story</p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-3">
+                    Editor's Pick
+                </h2>
+            </div>
+
+           
+            <a href="#">
+                <div class="grid md:grid-cols-2 gap-8 items-center mx-auto max-w-xl">
+                 
+                    <div>
+                        <img src="Assets/Images/Homepage/Thumbnail_trail 01.webp" alt="Featured Article"
+                            class="w-full rounded-xl" loading="lazy">
+
+                    </div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-slate-800 mt-4 leading-text">The Best Smartphones to Watch
+                            This
+                            Year
+                        </h3>
+
+                        <p class="mt-4 text-sm text-slate-500 font-medim">
+                            <time datetime="2026-08-26">August 25, 2026</time> • 5 Min Read
+                        </p>
+                        <p class="text-slate-800 text-lg mt-4 leading-relaxed">Explore the latest flagship launches,
+                            innovative features and buying advice
+                            to choose the right smartphone for your needs.</p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    </section>
+-->
+
+    <!--Latest Articles-->
+    <section class="md:px-5 py-10 md:mx-10 my-5 space-y-4 bg-slate-100" id="news">
+        <h2 class="font-semibold text-center text-blue-700 uppercase tracking-widest">Latest Articles</h2>
+        <!--Column design for reponsive design-->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto md:px-6 max-w-7xl bg-slate-100">
+            <div
+                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 p-3 space-y-4 mx-5 flex flex-col h-full">
+                <!--News Thumbnail-->
+                <img src="Assets/Images/Blog/Moto-Edge-60-Fusion/Blog Thumbnail Moto Edge 60 Fusion launched in India.webp"
+                    alt="Moto Edge 60 Fusion launched in India" class="h-48" loading="lazy">
+                <!--News titile-->
+                <h3 class="font-bold text-xl text-slate-800 leading-snug">Moto Edge 60 Fusion launched in India
+                </h3>
+                <p><time datetime="2026-07-11" class="text-slate-500">July 11, 2026</time></p>
+                <!--News summary-->
+                <p class="mt-4 text-slate-600 leading-relaxed">Motorola has launched the Moto Edge 60 Fusion
+                    with a
+                    MediaTek Dimensity 7400 processor and several upgrades
+                    over its predecessor.
+                </p>
+                <p><a href="Blogs/New-Launches/Moto-Edge-60-Fusion-Launched-In-India.html"
+                        class="hover:cursor inline-flex items-center gap-2 text-blue-600 font-semibold mt-4">Read
+                        More <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></span>
+                    </a></p>
+            </div>
+
+            <div
+                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 p-3 space-y-4 mx-5 flex flex-col h-full">
+                <!--News Thumbnail-->
+                <img src="Assets/Images/Blog/Iqoo-Neo-10/thumbnail.webp" alt="IQOO NEO 10 poster in Orange color"
+                    class="h-48" loading="lazy">
+                <h3 class="font-bold text-xl text-slate-800 leading-snug">iQOO is launching its IQOO Neo 10 in India
+                    on
+                    26th May</h3>
+
+                <p><time datetime="2026-07-01" class="text-slate-500">July 1, 2026</time></p>
+                <p class="mt-4 text-slate-600 leading-relaxed">iQOO is launching its IQOO Neo 10 a new gaming centric
+                    smartphone in India on 26th May 2025.
+                    It
+                    comes with
+                    Snapdragon 8s Gen 4 along with a custom chip for gaming.</p>
+
+                <p><a href="Blogs/News/Iqoo-Neo-10-Launching-Soon-In-India.html"
+                        class="hover:cursor inline-flex items-center gap-2 text-blue-600 font-semibold mt-4">Read
+                        More <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></span></a></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Ad Placement-->
+    <!--
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="ad-slot bg-white rounded-xl shadow-sm h-[90px] flex items-center justify-center">
+                <p class="text-slate-400 uppercase tracking-wider text-cxs">
+                    Google Ad (728 X 90)
+                </p>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--Categories section-->
+    <section class="md:py-20 py-5 bg-slate-100" id="categories">
+        <div class="max-w-7xl mx-auto px-6">
+            <!--Section heading-->
+            <div class="text-center mb-12">
+                <p class="text-blue-700 font-semibold uppercase tracking-widest">
+                    Browse Categories
+                </p>
+
+                <h2 class="mt-3 text-4xl font-bold text-slate-800">
+                    Explore Topics
+                </h2>
+
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                    Discover articles across smartphones, laptops, accessories and the latest technology news.
+                </p>
+            </div>
         </div>
 
+        <!--Category Cards-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!--Card 1-->
+            <div class="text-center">
+                <a href="Smartphones/index.html">
+                    <div class="text-5xl mb-4">
+                        📱
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-800">Smartphones</h3>
+
+                    <p class="text-salte-800 mt-2">
+                        Reviews, launches and comparisions.
+                    </p>
+                </a>
+            </div>
+
+            <!--Card 2-->
+            <!--
+            <div class="text-center">
+                <a href="">
+                    <div class="text-5xl mb-4">
+                        🎧
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-800">Accessories</h3>
+
+                    <p class="text-salte-800 mt-2">
+                        Earbuds, Chargers and more.
+                    </p>
+                </a>
+            </div>
+-->
+
+            <!--Card 3-->
+            <!--
+            <div class="text-center">
+                <a href="">
+                    <div class="text-5xl mb-4">
+                        💻
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-800">Laptops</h3>
+
+                    <p class="text-salte-800 mt-2">
+                        Buying guides and reviews.
+                    </p>
+                </a>
+            </div>
+            -->
+            <!--Card 4-->
+            <div class="text-center">
+                <a href="News/Index.html">
+                    <div class="text-5xl mb-4">
+                        ⚡
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-800">Tech News</h3>
+
+                    <p class="text-salte-800 mt-2">
+                        Latest happenings from the tech world.
+                    </p>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <!--Footer-->
+    <footer class="bg-gradient-to-r from-blue-600 to-blue-900 text-white border-t border-blue-500">
+        <div class="max-w-7xl mx-auto px-6 md:py-16 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!--Brand Section-->
+                <div>
+                    <!--Logo-->
+                    <img src="./Assets/Images/Logo/Images/Mobile Matters Blog - logo.webp"
+                        alt="Mobile Matters Blog - Logo" height="320" width="240">
+                    <h3 class="text-2xl font-bold">
+                        Mobile Matters Blog
+                    </h3>
+
+                    <p class="mt-4 text-blue-100 leading-relaxed">
+                        Stay updated with smartphone launches, gadget reviews, laptop buying guides, accessories and the
+                        latest technology news.
+                    </p>
+                </div>
+
+                <!--Quick Links-->
+                <div>
+                    <h3 class="text-lg font-semibold">
+                        Quick Links
+                    </h3>
+
+                    <ul class="mt-4 space-y-3">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="aboutus.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="Disclaimer.html">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--Script for custom JS-->
     <script src="script.js"></script>

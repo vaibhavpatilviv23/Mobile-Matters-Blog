@@ -1,32 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+
 .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    top: 5px;
-    height: 2px;
-    background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  top: 5px;
+  height: 2px;
+  background: #ffffff;
 }
 
 .hamburger-middle {
-    transform: translateY(7px);
+  transform: translateY(7px);
 }
 
-
 .hamburger-bottom {
-    transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .thumbnail {
-    height: 200px;
-    width: 450px;
+  height: 200px;
+  width: 450px;
+}
+
+.adlam-display-regular {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-font {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

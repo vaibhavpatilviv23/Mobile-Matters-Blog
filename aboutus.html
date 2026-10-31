@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Matters Blog – Explore Smartphones, Gadgets & Reviews | About US</title>
+    <title>Mobile Matters Blog – Explore Smartphones, Gadgets & Reviews | About Us</title>
     <meta name="description"
         content="Mobile Matters offers deep dives into the latest smartphones, trends, and accessories—perfect for tech enthusiasts and savvy buyers alike.">
-    <link rel="shortcut icon" href="Assets/Core/Images/Mobile Matters Blog - logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Images/Logo/Images/Mobile Matters Blog - favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <!--Tailwind CSS CDN link-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,15 +21,22 @@
 
 <body class="bg-gray-100">
     <!--Navbar-->
-    <nav class="navbar p-3 bg-slate-800 font-serif font-bold sm:text-xl">
+    <nav class="navbar p-3 bg-linear-65 from-slate-300 to-blue-800 font-semibold sm:text-xl">
         <div class="flex items-center justify-between">
             <!--Logo-->
-            <a href="index.html" class="text-white hover:text-blue-400">Mobile Matters Blog</a>
+            <a href="index.html" class="text-white hover:text-blue-400 custom-font"><img
+                    src="Assets/Images/Logo/Images/Mobile Matters Blog - favicon.webp"
+                    alt="Mobile Matters Blog logo with clickable link" class="border-none h-10 w-30"></a>
             <!--Other Menu-->
             <div class="hidden space-x-5 md:flex">
-                <a href="index.html" class="text-white hover:text-blue-400">Home</a>
-                <a href="aboutus.html" class="text-white hover:text-blue-400">About Us</a>
-                <a href="news.html" class="text-white hover:text-blue-400">News</a>
+                <a href="index.html" class="text-white hover:text-blue-400 custom-font">Home</a>
+                <a href="Smartphones/index.html" class="text-white hover:text-blue-400 custom-font">Smartphones</a>
+                <!--
+                <a href="#l" class="text-white hover:text-blue-400 custom-font">Accessories</a>
+                <a href="#" class="text-white hover:text-blue-400 custom-font">Laptops</a>
+                -->
+                <a href="News/Index.html" class="text-white hover:text-blue-400 custom-font">News</a>
+                <a href="aboutus.html" class="text-white hover:text-blue-400 custom-font">About</a>
             </div>
 
             <!--Hamburger icon-->
@@ -43,15 +50,36 @@
         <!--Mobile menu-->
         <div class="md:hidden">
             <div id="menu"
-                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-slate-700 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
-                <a href="index.html" class="text-white hover:text-blue-400 active:text-blue-400">Home</a>
-                <a href="aboutus.html" class="text-white hover:text-blue-400 active:text-blue-400">About Us</a>
-                <a href="news.html" class="text-white hover:text-blue-400 active:text-blue-400">News</a>
+                class="absoulute flex-col items-end self-end py-5 px-5 mt-5 space-y-4 bg-gradient-to-br from-slate-300 via-blue-500 to-blue-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden rounded-md">
+                <ul class="divide-y divide-white/10">
+                    <li>
+                        <a href="index.html" class="block px-6 py-5 text-white font-semibold">Home</a>
+                    </li>
+                    <li>
+                        <a href="Smartphones/index.html" class="block px-6 py-5 text-white font-semibold">Smartphones</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="aboutus.html" class="block px-6 py-5 text-white font-semibold">Accessories</a>
+                    </li>
+                    
+                    <li>
+                        <a href="aboutus.html" class="block px-6 py-5 text-white font-semibold">Laptops</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="News/Index.html" class="block px-6 py-5 text-white font-semibold">News</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html" class="block px-6 py-5 text-white font-semibold">About</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!--About Us section-->
+    <!--
     <section class="px-5 py-3 md:px-15">
         <h2 class="text-center font-bold text-2xl">About Us</h2>
         <article class="space-y-5 mt-4 sm:text-lg">
@@ -78,7 +106,7 @@
                 </section>
 
                 <section id="logo">
-                    <img src="Assets/Core/Images/Mobile Matters Blog - logo.jpg" alt="Mobile Matters Blog Logo"
+                    <img src="./Assets/Images/Logo/Images/Mobile Matters Blog - logo.webp" alt="Mobile Matters Blog Logo"
                         class="h-60 md:h-70 border-3 rounded-lg mx-auto md:my-30">
                 </section>
             </div>
@@ -89,6 +117,211 @@
             </section>
         </article>
     </section>
+    -->
+
+    <!--About Hero section-->
+    <section class="md:py-28 py-10 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-blue-700 font-semibold uppercase tracking-widest">
+                About Mobile Matters Blog
+            </p>
+
+            <h1 class="mt-5 text-3xl md:text-4xl font-bold text-slate-800 leading-tight">
+                Technology Made
+                <span class="text-blue-600">Simple</span>
+            </h1>
+
+            <p class="mt-6 text-cl text-slate-600 leading-relaxed">
+                Mobile Matters Blog is a technology blog focused on
+                smartphones, gadgets, accessories, laptops and
+                technology news, helping readers stay informed
+                and make better decisions.
+            </p>
+        </div>
+    </section>
+
+    <!--Who We Are-->
+    <section class="py-10 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!--Content-->
+                <div>
+                    <p class="text-blue-700 font-semibold uppercase tracking-widest">
+                        Who We Are
+                    </p>
+
+                    <h2 class="mt-3 text-3xl font-bold text-slate-800">Passionate About Technology</h2>
+
+                    <p class="mt-6 text-slate-600 leading-relaxed">
+                        Mobile Matters Blog was created with a simple goal: to make technology information easier to
+                        understand and accessible to everyone.
+                    </p>
+
+                    <p class="mt-4 text-slate-600 leading-relaxed">
+                        From smartphone launches and gadget reviews to accessories, laptops and technology news, we aim
+                        to provide valuable content that helps readers stay updated and informed.
+                    </p>
+                </div>
+
+                <!--Image-->
+                <div>
+                    <img src="./Assets/Images/Logo/Images/Mobile Matters Blog - logo.webp"
+                        alt="Mobile Matters Blog - logo" class="h-75 w-75 mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--What We Cover-->
+    <section class="py-10 md:py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-blue-700 font-semibold uppercase tracking-widest">
+                    What We Cover
+                </p>
+
+                <h2 class="mt-3 text-3xl font-bold text-slate-800">Technology Topics That Matter</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!--Card 1-->
+                <div class="text-center">
+                    <a href="">
+                        <div class="text-5xl mb-4">
+                            📱
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-800">Smartphones</h3>
+
+                        <p class="text-salte-800 mt-2">
+                            Reviews, launches and comparisions.
+                        </p>
+                    </a>
+                </div>
+
+                <!--Card 2-->
+                <div class="text-center">
+                    <a href="">
+                        <div class="text-5xl mb-4">
+                            🎧
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-800">Accessories</h3>
+
+                        <p class="text-salte-800 mt-2">
+                            Earbuds, Chargers and more.
+                        </p>
+                    </a>
+                </div>
+
+                <!--Card 3-->
+                <div class="text-center">
+                    <a href="">
+                        <div class="text-5xl mb-4">
+                            💻
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-800">Laptops</h3>
+
+                        <p class="text-salte-800 mt-2">
+                            Buying guides and reviews.
+                        </p>
+                    </a>
+                </div>
+
+                <!--Card 4-->
+                <div class="text-center">
+                    <a href="">
+                        <div class="text-5xl mb-4">
+                            ⚡
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-800">Tech News</h3>
+
+                        <p class="text-salte-800 mt-2">
+                            Latest happenings from the tech world.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Our Mission-->
+    <section class="md:py-20 py-10 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-blue-700 font-semibol uppercase tracking-widest">Our Mission</p>
+            <h2 class="mt-3 text-3xl font-bold text-slate-800">
+                Helping Readers Navigate Technology
+            </h2>
+
+            <p class="mt-6 text-slate-600 text-lg leading-relaxed">
+                Our mission is to provide clear, reliable and
+                easy-to-understand technology content that helps
+                readers stay informed about smartphones, gadgets,
+                accessories and emerging technology trends.
+            </p>
+        </div>
+    </section>
+
+    <!--Thank You-->
+    <section class="py-10 md:py-20 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-800">
+                Thank You for Visiting
+            </h2>
+
+            <p class="mt-6 text-slate-600 text-lg leading-relaxed">
+                Thank you for being a part of the Mobile Matters Blog community. We are continuously working to improve the website and publish helpful content for technology enthusiasts and everyday users alike.
+            </p>
+        </div>
+    </section>
+
+     <!--Footer-->
+    <footer class="bg-gradient-to-r from-blue-600 to-blue-900 text-white border-t border-blue-500">
+        <div class="max-w-7xl mx-auto px-6 md:py-16 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!--Brand Section-->
+                <div>
+                    <!--Logo-->
+                    <img src="./Assets/Images/Logo/Images/Mobile Matters Blog - logo.webp" alt="Mobile Matters Blog - Logo" height="320" width="240">
+                    <h3 class="text-2xl font-bold">
+                        Mobile Matters Blog
+                    </h3>
+
+                    <p class="mt-4 text-blue-100 leading-relaxed">
+                        Stay updated with smartphone launches, gadget reviews, laptop buying guides, accessories and the latest technology news.
+                    </p>
+                </div>
+
+                <!--Quick Links-->
+                <div>
+                    <h3 class="text-lg font-semibold">
+                        Quick Links
+                    </h3>
+
+                    <ul class="mt-4 space-y-3">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="aboutus.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="Disclaimer.html">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!--Script for custom JS-->
     <script src="script.js"></script>
